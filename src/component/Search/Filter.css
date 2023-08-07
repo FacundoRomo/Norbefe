@@ -4,6 +4,14 @@ form {
   justify-content: space-around;
   align-items: center;
   margin: 20px 0;
+  position: relative;
+  color:#fff;
+  font-weight: 400;
+  background: rgba(19,22,4,0.2);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(19,22,4,0.1);
+  border-radius: 10px;
 }
 
 input {

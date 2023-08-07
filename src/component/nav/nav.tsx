@@ -1,12 +1,24 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./nav.css"
+import { SupportViewTransition } from "../../utils/NavigateTo"
 
 export function Navbar() {
-    return (
-        <Link to="/" replace>
-            <nav className="nav-bar">
-                <h1 className="title">Norbefe</h1>
-            </nav>
-        </Link>
-    )
+  const navigate = useNavigate()
+  function viewNagivate (to:string){
+    
+    if (!SupportViewTransition){
+      navigate(to)
+      console.log("daasdda")
+    } 
+
+    document.startViewTransition(() =>{
+      navigate(to, {replace:true})
+    } )
+  }
+  
+  return (
+      <nav className="nav-bar" onClick={()=> viewNagivate("/")}>
+        <h1 className="title">Norbefe</h1>
+      </nav>
+  )
 }

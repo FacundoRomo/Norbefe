@@ -2,16 +2,18 @@ import { PricesContext } from "../../context/Context";
 import { Cuadro } from "../cuadro/Cuadro";
 import { useContext } from "react"
 import "./Products.css"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function Products() {
   const { filteredProducts } = useContext(PricesContext)
+
+  
 
   return (
     <section className="products">
       {
         filteredProducts.map(cuadro => (
-          <Link to={`cuadro/${cuadro.id}`} key={cuadro.id}>
+          // <Link to={`/cuadro/${cuadro.id}`} key={cuadro.id} replace>
             <Cuadro
               key={cuadro.id}
               id={cuadro.id}
@@ -20,7 +22,7 @@ export function Products() {
               description={cuadro.description}
               price={cuadro.price}
             />
-          </Link>
+          //  </Link>
         ))
       }
     </section>

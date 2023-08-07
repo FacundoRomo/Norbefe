@@ -11,24 +11,24 @@ export function ListCuadros() {
 
   return (
     <>
-    {obrasRandom ? 
-    <section className="listCuadros">
-      {
-        obrasRandom.map(cuadro => (
-          <Link to={`/cuadro/${cuadro.id}`} replace key={cuadro.id}>
-            <Cuadro
-              key={cuadro.id}
-              id={cuadro.id}
-              title={cuadro.title}
-              img={cuadro.img}
-              price={cuadro.price}
-              description={cuadro.description} />
-          </Link>))
+      {obrasRandom ?
+        <section className="listCuadros">
+          {
+            obrasRandom.map(cuadro => (
+              <Link to={`/cuadro/${cuadro.id}`} replace key={cuadro.id}>
+                <Cuadro
+                  key={cuadro.id}
+                  id={cuadro.id}
+                  title={cuadro.title}
+                  img={cuadro.img}
+                  price={cuadro.price}
+                  description={cuadro.description} />
+              </Link>))
+          }
+        </section>
+        : <> </>
       }
-    </section>
-  :<> </>
-  }
-  </>
+    </>
   )
 }
 
