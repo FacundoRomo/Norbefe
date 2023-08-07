@@ -1,0 +1,25 @@
+:root,
+*,
+main {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.buy-obra{
+  margin: auto 0 20px 0;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+.buy-obra:hover{
+  background-color: #25D366;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  z-index: 100000;
+}

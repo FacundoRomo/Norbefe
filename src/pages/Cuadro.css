@@ -1,0 +1,46 @@
+.container-obra{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  border: 1px solid gray;
+  margin: 20px 10px 0 10px;
+  padding: 10px 0;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+} 
+.img-obra{
+  width: 50%;
+  max-width: 395px;
+  min-width: 250px ;
+}
+.info-obra{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  gap: 25px;
+}
+.title-obra{
+  font-size: 50px;
+  text-align: center;
+}
+.descrp-obra{
+  font-size: 25px;
+}
+.price-obra{
+  font-size: 20px;
+  padding: 5px;
+  border: 1px dashed #0a1613 ;
+  border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 600px){
+  .container-obra{
+    justify-content: center;
+  }
+}

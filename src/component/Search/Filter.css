@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+input {
+  border: 1px solid #cfcfcf;
+  border-right: 0;
+  height: 30px;
+  font: inherit;
+  padding: 3px;
+  line-height: 1;
+  text-align: left;
+  outline: 0;
+  border-radius: 10px;
+  width: 120px;
+  transition: width 0.3s ease;
+}
