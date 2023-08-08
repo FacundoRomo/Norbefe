@@ -23,9 +23,8 @@ export function Cuadro() {
       <ScrollRestoration />
       {
         obra ?
-          <>
-            <Navbar />
-            <main className="container-obra">
+          <section className="container-obras">  
+            <section className="container-obra">
               <img className="img-obra" src={obra.img} />
               <section className="info-obra">
                 <h2 className="title-obra">{obra.title}</h2>
@@ -34,11 +33,11 @@ export function Cuadro() {
                 <WhatsAppLink
                   linkObra={window.location.toString()} />
               </section>
-            </main>
+            </section>
             <aside>
               <ListCuadros />
             </aside>
-          </>
+          </section>
           : <></>
       }
 
