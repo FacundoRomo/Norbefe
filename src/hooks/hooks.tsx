@@ -11,7 +11,7 @@ export function UseFilter() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch("/src/cuadros.json")
+        const response = await fetch("https://raw.githubusercontent.com/FacundoRomo/Norbefe/master/src/cuadros.json")
         if (!response.ok) {
           throw new Error("Error al obtener los cuadros" + response.status)
         }

@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate } from "react-router-dom"
+import { Outlet, useNavigate } from "react-router-dom"
 import "./nav.css"
 import { SupportViewTransition } from "../../utils/NavigateTo"
 

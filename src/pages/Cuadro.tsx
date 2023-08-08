@@ -1,7 +1,6 @@
 import { useContext } from "react"
 import "./Cuadro.css"
 import { PricesContext } from "../context/Context"
-import { Navbar } from "../component/nav/nav"
 import { ListCuadros } from "./ListCuadros"
 import { ScrollRestoration, useLoaderData } from "react-router-dom"
 import { WhatsAppLink } from "../utils/WhatsApp"
@@ -25,7 +24,7 @@ export function Cuadro() {
         obra ?
           <section className="container-obras">  
             <section className="container-obra">
-              <img className="img-obra" src={obra.img} />
+              <img className="img-obra" src={obra.img} loading={"lazy"}/>
               <section className="info-obra">
                 <h2 className="title-obra">{obra.title}</h2>
                 <p className="descrp-obra">{obra.description}</p>

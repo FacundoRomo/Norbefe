@@ -20,7 +20,7 @@ export function Cuadro({id,title,img,description,price} : Cuadros) {
   
   return (
     <section className="section-Card content" onClick={() => {viewNagivate(`/cuadro/${id}`)}}>
-        <img src={img} alt={title} loading="lazy" className="img-cuadro" />
+        <img src={img} alt={title} loading={"lazy"} className="img-cuadro" />
         <h2>{title}</h2>
         <p>{description}</p>
         <span className="price">${price}</span>

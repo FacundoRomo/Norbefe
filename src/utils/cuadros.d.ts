@@ -20,3 +20,8 @@ export type Context = {
   filter:number,
   cuadros: Cuadros[] | null
 }
+declare global {
+  interface Document {
+    startViewTransition(callback: () => void): void;
+  }
+}

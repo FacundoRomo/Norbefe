@@ -2,7 +2,6 @@ import { PricesContext } from "../../context/Context";
 import { Cuadro } from "../cuadro/Cuadro";
 import { useContext } from "react"
 import "./Products.css"
-import { Link, useNavigate } from "react-router-dom";
 
 export function Products() {
   const { filteredProducts } = useContext(PricesContext)

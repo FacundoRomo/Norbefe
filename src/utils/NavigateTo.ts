@@ -1,4 +1,4 @@
 
 export function SupportViewTransition() {
-  return document.startViewTransition ? true : false
+  return typeof document.startViewTransition === "function"
 }
