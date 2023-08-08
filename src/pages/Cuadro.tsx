@@ -4,6 +4,7 @@ import { PricesContext } from "../context/Context"
 import { ListCuadros } from "./ListCuadros"
 import { ScrollRestoration, useLoaderData } from "react-router-dom"
 import { WhatsAppLink } from "../utils/WhatsApp"
+import { ErrorPage } from "./404"
 
 export async function getCuadro({ params }: any) {
 
@@ -22,7 +23,7 @@ export function Cuadro() {
       <ScrollRestoration />
       {
         obra ?
-          <section className="container-obras">  
+          <section className="container-obras background-obras">  
             <section className="container-obra">
               <img className="img-obra" src={obra.img} loading={"lazy"}/>
               <section className="info-obra">
@@ -37,7 +38,7 @@ export function Cuadro() {
               <ListCuadros />
             </aside>
           </section>
-          : <></>
+          : <ErrorPage />
       }
 
     </>
