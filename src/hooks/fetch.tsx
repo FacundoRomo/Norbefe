@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Cuadros } from "../utils/cuadros"
+import { Cuadros } from "../utils/tipos"
 
 export function UseSearchCuadros (){
   const [cuadros, setCuadros] = useState<Cuadros[]>([])

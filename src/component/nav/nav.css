@@ -29,3 +29,12 @@
   color: #fff;
   text-align: center;
 }
+.back-icon{
+  fill: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  margin-left: 5vw;
+}

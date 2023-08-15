@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { PricesContext } from "../context/Context";
-import { Cuadro } from "../component/cuadro/Cuadro";
+import { PricesContext } from "../../context/Context";
+import { Cuadro } from "../../component/cuadro/Cuadro";
 import "./ListCuadros.css"
 import { Link } from "react-router-dom";
-import { RandomsCuadros } from "../utils/RandomsCuadros";
+import { RandomsCuadros } from "../../utils/RandomsCuadros";
 
 export function ListCuadros() {
   const { cuadros } = useContext(PricesContext)

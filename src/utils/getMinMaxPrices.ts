@@ -1,4 +1,4 @@
-import { Cuadros, Filters } from "./cuadros";
+import { Cuadros, Filters } from "./tipos";
 
 export function getMinMaxPrices (cuadros: Cuadros[]): Filters {
     let minPrice = cuadros[0].price

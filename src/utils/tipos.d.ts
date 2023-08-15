@@ -25,3 +25,8 @@ declare global {
     startViewTransition(callback: () => void): void;
   }
 }
+
+export type user = {
+  email:string ,
+  password:string
+}

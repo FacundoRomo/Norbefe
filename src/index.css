@@ -17,6 +17,7 @@ a {
   border-radius: 10px;
   cursor: pointer;
   color: #fff;
+  background-color: transparent;
 }
 .buy-obra:hover{
   background-color: #25D366;

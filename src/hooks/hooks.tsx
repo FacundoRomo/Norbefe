@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Cuadros, Filters } from "../utils/cuadros";
+import { Cuadros, Filters } from "../utils/tipos";
 import { getMinMaxPrices } from "../utils/getMinMaxPrices";
 
 export function UseFilter() {

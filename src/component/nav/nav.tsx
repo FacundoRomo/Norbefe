@@ -1,6 +1,7 @@
 import { Outlet, useNavigate } from "react-router-dom"
 import "./nav.css"
 import { SupportViewTransition } from "../../utils/NavigateTo"
+import { BiArrowBack } from "react-icons/bi"
 
 export function Navbar() {
   const navigate = useNavigate()
@@ -19,6 +20,7 @@ export function Navbar() {
   return (
     <>
     <nav className="nav-bar nav-bar-container" onClick={() => viewNagivate("/")}>
+      <BiArrowBack className="back-icon"/>
       <h1 className="title">Norbefe</h1>
     </nav>
     <div>

@@ -12,7 +12,6 @@ export function Products() {
     <section className="products">
       {
         filteredProducts.map(cuadro => (
-          // <Link to={`/cuadro/${cuadro.id}`} key={cuadro.id} replace>
             <Cuadro
               key={cuadro.id}
               id={cuadro.id}
@@ -21,7 +20,6 @@ export function Products() {
               description={cuadro.description}
               price={cuadro.price}
             />
-          //  </Link>
         ))
       }
     </section>

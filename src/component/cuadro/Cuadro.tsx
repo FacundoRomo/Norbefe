@@ -1,5 +1,5 @@
 import "./Cuadro.css"
-import { Cuadros } from "../../utils/cuadros"
+import { Cuadros } from "../../utils/tipos"
 import { SupportViewTransition } from "../../utils/NavigateTo"
 import { useNavigate } from "react-router-dom"
 

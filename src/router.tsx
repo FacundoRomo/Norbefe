@@ -1,9 +1,10 @@
 import { RouterProvider, createHashRouter } from "react-router-dom";
 import App from "./App";
-import { Cuadro } from "./pages/Cuadro";
-import { getCuadro } from "./pages/Cuadro"
+import { Cuadro } from "./pages/Cuadro/Cuadro";
+import { getCuadro } from "./pages/Cuadro/Cuadro"
 import { Home } from "./component/main/Home";
-import { WhatsAppLink } from "./utils/WhatsApp";
+import { ErrorPage } from "./pages/404";
+import { Login } from "./pages/Login/Login";
 
 
 export function Router() {
@@ -11,7 +12,7 @@ export function Router() {
     {
       path: "/",
       element: <App />,
-      errorElement:<h2>asdasdasdasd</h2>,
+      errorElement:<ErrorPage />,
       children:[{
         path:"/",
         element:<Home />
@@ -19,6 +20,9 @@ export function Router() {
         path:"/cuadro/:id",
         element:<Cuadro />,
         loader: getCuadro,
+      },{
+        path:"/login",
+        element:<Login />
       }
       ]
     },

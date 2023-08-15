@@ -1,4 +1,4 @@
-import { Cuadros } from "./cuadros"
+import { Cuadros } from "./tipos"
 
 export function RandomsCuadros( cuadros :Cuadros[] | null){
   let obrasRandom: Cuadros[] =[]

@@ -1,10 +1,10 @@
 import { useContext } from "react"
 import "./Cuadro.css"
-import { PricesContext } from "../context/Context"
-import { ListCuadros } from "./ListCuadros"
+import { PricesContext } from "../../context/Context"
+import { ListCuadros } from "../ListCuadros/ListCuadros"
 import { ScrollRestoration, useLoaderData } from "react-router-dom"
-import { WhatsAppLink } from "../utils/WhatsApp"
-import { ErrorPage } from "./404"
+import { WhatsAppLink } from "../../utils/WhatsApp"
+import { ErrorPage } from "../404"
 
 export async function getCuadro({ params }: any) {
 
